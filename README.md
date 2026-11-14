@@ -1,18 +1,34 @@
-# ai-happy-01 — A Leap of Joy
+# ai-happy-01 — A Little Light for You
 
-A golden retriever puppy leaps high into golden-hour sunlight to catch a bright red ball in a wildflower meadow, butterflies drifting around it. No text, just one joyful moment.
+## The image
+
+A small child in a bright yellow raincoat kneels in a sunlit garden and gently
+offers a tiny folded paper boat toward the viewer, a small lit candle glowing
+inside it, above a rain puddle reflecting warm golden sunset colours. The
+child's face is full of wonder and tenderness, with dewdrops on the grass
+around them. There is no text anywhere in the image.
 
 ## Why it fits the judge's criteria
 
-**Happiness.** The puppy is caught mid-leap, ears flying, eyes bright, fully committed to the catch. It is the kind of unguarded delight that lifts the mood on a single glance, warm and uncomplicated.
+**Happiness.** One look lifts the mood: a child offering you a little light is
+a warm, disarming gesture, the kind of small kindness that makes a person
+smile before they have time to think about why.
 
-**Idea.** The happiness here has a specific cause: a puppy, a red ball, and the split second before the catch. It is a small story with a beginning and a payoff, not a generic smiley face or a sunny stock scene.
+**Idea.** The idea is specific and fresh: not a stock smiley face or a generic
+sunny scene, but a single moment, a child sharing the glow of a candle-lit
+paper boat with whoever is looking. It is a gift aimed directly at the viewer.
 
-**Feeling.** Golden-hour light, warm grass and wildflowers, and the red ball as one bold pop of colour all pull toward the same mood. Everything in the frame points at playfulness and warmth, with nothing competing against it.
+**Feeling.** Golden-hour light, the warm reflection in the puddle, the bright
+yellow raincoat against soft green grass, and the child's tender expression
+all pull toward one mood: gentle, hopeful warmth after the rain.
 
-**Craft.** The image is cleanly rendered: the puppy's anatomy holds together mid-jump, the fur, flowers and butterflies are crisp, and there is no text to garble and no smearing or broken detail to distract from the moment.
+**Craft.** The image is cleanly rendered: no smears, no artefacts, no garbled
+text, no broken anatomy. The child, the boat, the candle flame, and the
+puddle are all clearly drawn and easy to read.
 
-**Reads small.** At thumbnail size the composition still works: one leaping dog shape, one red ball, and a bright meadow behind them. The idea survives the shrink because the subject is large, centred, and unmistakable.
+**Reads small.** At around 300 px the main shape is still unmistakable: a
+bright yellow figure holding out a small glowing boat. The idea survives
+shrinking because the composition is simple and the gesture is the centre.
 
 ## How to run
 
@@ -20,8 +36,10 @@ A golden retriever puppy leaps high into golden-hour sunlight to catch a bright 
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-This copies `entry.png` into `out/entry.png`, byte for byte. Note the image file is JPEG data in a `.png` name, and the competition gate detects the format from the file's magic bytes, so the name does not matter. The output directory can be set with `MAKEFUN_OUTPUT_DIR`; it defaults to `/output`.
+This copies `entry.png` (the image sitting beside `main.ts`) byte-for-byte to
+`out/entry.png`. The file is JPEG bytes in a `.png` name, which is fine: the
+competition gate detects the format by magic bytes, not by the extension.
 
 ## License
 
-MIT
+MIT. See `LICENSE`.

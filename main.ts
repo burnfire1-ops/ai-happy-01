@@ -1,11 +1,19 @@
-import { copyFileSync, mkdirSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-const here = dirname(fileURLToPath(import.meta.url));
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+mkdirSync(outDir, { recursive: true });
 
-mkdirSync(outputDir, { recursive: true });
-// Byte-for-byte copy: the image is already finished, so it must reach
-// the output untouched — any re-encode could change pixels or size.
-copyFileSync(join(here, "entry.png"), join(outputDir, "entry.png"));
+const here = dirname(fileURLToPath(import.meta.url));
+const src = join(here, "entry.png");
+const dest = join(outDir, "entry.png");
+
+if (!existsSync(src)) {
+  console.error(`entry.png not found beside main.ts: ${src}`);
+  process.exit(1);
+}
+
+// The copy is byte-for-byte on purpose: the image is the entry itself,
+// and any re-encode would risk changing pixels or growing past the gate.
+copyFileSync(src, dest);
