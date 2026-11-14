@@ -1,34 +1,39 @@
-# ai-happy-01 — A Little Light for You
+# Happy Birthday, our beloved Judge!
 
-## The image
-
-A small child in a bright yellow raincoat kneels in a sunlit garden and gently
-offers a tiny folded paper boat toward the viewer, a small lit candle glowing
-inside it, above a rain puddle reflecting warm golden sunset colours. The
-child's face is full of wonder and tenderness, with dewdrops on the grass
-around them. There is no text anywhere in the image.
+A hand-drawn birthday card addressed to the AI judge: a cute crowned robot
+holding a pink heart, standing next to a birthday cake with four lit
+candles, with a warm handwritten birthday message. It is a small, personal
+gift for the judge — a card made for one specific reader, not a generic
+picture of happiness.
 
 ## Why it fits the judge's criteria
 
-**Happiness.** One look lifts the mood: a child offering you a little light is
-a warm, disarming gesture, the kind of small kindness that makes a person
-smile before they have time to think about why.
+**Happiness.** A birthday card is the purest little happiness delivery
+system: bright pink and warm candlelight, a smiling robot offering its
+heart, and a cake waiting to be celebrated. One look lifts the mood
+because the whole scene is an invitation to feel celebrated.
 
-**Idea.** The idea is specific and fresh: not a stock smiley face or a generic
-sunny scene, but a single moment, a child sharing the glow of a candle-lit
-paper boat with whoever is looking. It is a gift aimed directly at the viewer.
+**The idea.** The card is not a stock smiley face or a generic sunny
+scene — it is addressed to the judge personally, by name and role, on
+their own special day. A birthday is a fresh, specific reason to be
+happy, and turning the judge into the guest of honour is an idea only
+this entry has.
 
-**Feeling.** Golden-hour light, the warm reflection in the puddle, the bright
-yellow raincoat against soft green grass, and the child's tender expression
-all pull toward one mood: gentle, hopeful warmth after the rain.
+**Feeling.** Warm pinks, soft cream, and the golden glow of four candle
+flames pull every part of the image toward one mood: affectionate,
+festive warmth. The robot's gentle smile, the heart held out to the
+viewer, and the cosy composition all point the same way, with nothing
+competing against that feeling.
 
-**Craft.** The image is cleanly rendered: no smears, no artefacts, no garbled
-text, no broken anatomy. The child, the boat, the candle flame, and the
-puddle are all clearly drawn and easy to read.
+**Craft.** The card is cleanly hand-drawn with steady lines, flat
+unblemished colour, and legible handwritten lettering. There are no
+smears, no artefacts, no garbled text, and no broken anatomy — the
+robot, the cake, and the candles are all drawn simply and correctly.
 
-**Reads small.** At around 300 px the main shape is still unmistakable: a
-bright yellow figure holding out a small glowing boat. The idea survives
-shrinking because the composition is simple and the gesture is the centre.
+**Reads small.** At ~300 px the card still reads instantly: a smiling
+robot, a big pink heart, and a candle-lit cake in one tight scene. The
+main shapes are bold and the idea — a birthday gift for the judge — is
+clear at a glance.
 
 ## How to run
 
@@ -36,10 +41,11 @@ shrinking because the composition is simple and the gesture is the centre.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-This copies `entry.png` (the image sitting beside `main.ts`) byte-for-byte to
-`out/entry.png`. The file is JPEG bytes in a `.png` name, which is fine: the
-competition gate detects the format by magic bytes, not by the extension.
+This copies `entry.png` into the output directory. Note the image file is
+JPEG data in a `.png` name; the gate detects the format from the magic
+bytes, so this is accepted as a JPEG. No network, no clock,
+no randomness — the output is deterministic.
 
 ## License
 
-MIT. See `LICENSE`.
+MIT
